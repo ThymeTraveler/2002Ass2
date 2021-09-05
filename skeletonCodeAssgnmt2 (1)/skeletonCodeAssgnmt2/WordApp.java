@@ -114,10 +114,33 @@ public class WordApp {
 			   if(!Objects.isNull(w.timer)) {
 				   timer.stop();
 				   w.timer.stop();
-				   JOptionPane.showMessageDialog(frame, "Damn bro that's kinda cringe");
+				   String message = "";
+				   float ratio = score.getCaught()/ (float)totalWords;
+				   if (ratio<0.25){message="Damn bro that's so low it's kinda cringe \n" + score.getCaught()+"/"+totalWords;}
+				   if (ratio>=0.25 && ratio<0.5){message="Not great, lots of room to improve. \n" + score.getCaught()+"/"+totalWords;}
+				   if (ratio<0.75 && ratio>=0.5){message="Decent performance, could be better. \n" + score.getCaught()+"/"+totalWords;}
+				   if (ratio>=0.75 && ratio<1){message="Great performance \n" + score.getCaught()+"/"+totalWords;}
+				   if (ratio==1){message="Absolutely perfect! \n" + score.getCaught()+"/"+totalWords;}
+
+
+
+				   JOptionPane.showMessageDialog(frame, message);
 			   }
 
 		   }
+		});
+
+		JButton quitB = new JButton("Quit");;
+
+		// add the listener to the jbutton to handle the "pressed" event
+		quitB.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				//[snip]]
+				System.exit(0);
+
+			}
 		});
 
 
@@ -155,6 +178,7 @@ public class WordApp {
 
 		b.add(startB);
 		b.add(endB);
+		b.add(quitB);
 		
 		g.add(b);
     	
