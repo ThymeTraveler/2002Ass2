@@ -1,0 +1,23 @@
+commit e997c6dc9cd995c0e55ff91b657ef182b7007e1b
+Author: Rayhaan Omar <rayhaan2120@gmail.com>
+Date:   Mon Sep 6 18:22:30 2021 +0200
+
+    javadoc added and pretty much done
+
+commit ca70b0f92a152d6aedd3c48982c8f476473ec7d2
+Author: rayhaan2120 <rayhaan2120@gmail.com>
+Date:   Mon Sep 6 14:37:19 2021 +0200
+
+    added makefile
+
+commit 27babf65b27ba5e01e9bab4edbca220c753258b2
+Author: Rayhaan Omar <rayhaan2120@gmail.com>
+Date:   Mon Sep 6 01:09:01 2021 +0200
+
+    Added quit button and message dialogs
+
+commit bd7ab5967df96e173a374246ff8cb468394f00b9
+Author: Rayhaan Omar <rayhaan2120@gmail.com>
+Date:   Mon Sep 6 00:32:12 2021 +0200
+
+    First commit (very late))
